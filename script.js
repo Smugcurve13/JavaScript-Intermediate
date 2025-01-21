@@ -180,11 +180,41 @@
 
 // Practice
 // Find Odd Numbers
-const numbers = [10,15,20,25,30]
+// const numbers = [10,15,20,25,30]
 
-const filterOddNumbers = (num) => num % 2 === 1;
-for (const num of numbers) {
-    if (filterOddNumbers(num)) {
-        console.log(`${num} is odd`)
-    }
+// const filterOddNumbers = (num) => num % 2 === 1;
+// for (const num of numbers) {
+//     if (filterOddNumbers(num)) {
+//         console.log(`${num} is odd`)
+//     }
+// }
+
+// JS SCOPE
+// Global Scope
+
+let globalVar = "I am global";
+
+function showGlobal() {
+    console.log(globalVar) // accessible
 }
+
+showGlobal();
+console.log(globalVar); //accessible
+
+// Function Scope
+
+function myFunction() {
+    let localVar = "I am local";
+    console.log(localVar); // accessible
+}
+
+myFunction();
+// console.log(localVar) // not accessible
+
+// Block Scope
+
+{
+    let blockVar = "I exist only here"
+    console.log(blockVar); // accessible
+}
+// console.log(blockVar) // not accessble
