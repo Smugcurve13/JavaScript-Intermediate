@@ -61,3 +61,14 @@
 // book.genre = "KoMeDy"
 
 // console.log(book)
+
+// LOOPS WITH ARRAYS
+const fruits = ['apple','banana','cherry']
+
+for (let i = 0; i < fruits.length; i++) {  // For Loop
+    console.log(fruits[i])
+}
+
+for (const fruit of fruits) { // For ... of Loop
+    console.log(fruit);
+}
