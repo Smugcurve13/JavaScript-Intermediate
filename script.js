@@ -107,12 +107,22 @@
 
 // COMBINING ARRAYS AND OBJECTS
 
-const books = [
-    {title: "BookA", author: "Author1"},
-    {title: "BookB", author: "Author2"},
-    {title: "BookC", author: "Author3"}
-]
+// const books = [
+//     {title: "BookA", author: "Author1"},
+//     {title: "BookB", author: "Author2"},
+//     {title: "BookC", author: "Author3"}
+// ]
 
-for (const book of books) {
-    console.log(`Title: ${book.title}, Author: ${book.author}`)
+// for (const book of books) {
+//     console.log(`Title: ${book.title}, Author: ${book.author}`)
+// }
+
+// PRACTICE
+const langs = [
+    {name: "Python", difficulty: "Easy"},
+    {name: "JS", difficulty: "dk"},
+    {name: "C#", difficulty: "def dk"}
+]
+for (const lang of langs) {
+    console.log(`Name: ${lang.name}, Difficulty: ${lang.difficulty}`)
 }
