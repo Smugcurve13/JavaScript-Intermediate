@@ -220,11 +220,27 @@
 // console.log(blockVar) // not accessble
 
 // Practice
-let counter = 0
-function incrementCounter(a) {
-    counter += a
-    console.log(counter);
-    const message = ("testmessage")
-    console.log(message)
+// let counter = 0
+// function incrementCounter(a) {
+//     counter += a
+//     console.log(counter);
+//     const message = ("testmessage")
+//     console.log(message)
+// }
+// incrementCounter(5)
+
+// CLOSURES
+// A closure is when a function "remembers" variables from its outer scope, even after the outer function has finished executing.
+
+function outerFunction() {
+    let OuterVar = "I am from the outer scope";
+
+    function innerFunction() {
+        console.log(OuterVar); // accessible due to closure
+    }
+
+    return innerFunction
 }
-incrementCounter(5)
+
+const myClosure = outerFunction();
+myClosure();
