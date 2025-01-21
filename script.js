@@ -85,12 +85,22 @@
 
 // OBJECTS WITH LOOPS
 
-const person = {
-    name: "John",
-    age: 30,
-    country: "USA"
+// const person = {
+//     name: "John",
+//     age: 30,
+//     country: "USA"
+// };
+
+// for (const key in person) {
+//     console.log(`${key}: ${person[key]}`)
+// }
+// Practice
+const car = {
+    make: "Honda",
+    model: "City",
+    year: 2015
 };
 
-for (const key in person) {
-    console.log(`${key}: ${person[key]}`)
+for (const key in car) {
+    console.log(`${key}: ${car[key]}`)
 }
