@@ -128,14 +128,21 @@
 // }
 
 // FUNCTIONS
-function greet(name) { // basic function defination
-    console.log(`Hello ${name}`);
-}
-greet("Alice");
+// function greet(name) { // basic function defination
+//     console.log(`Hello ${name}`);
+// }
+// greet("Alice");
 
-// Returning Values
-function add(a, b) {
-    return a + b;
+// // Returning Values
+// function add(a, b) {
+//     return a + b;
+// }
+// const result = add(5,3);
+// console.log(result)
+
+// Practice
+function multiply(a,b) {
+    return a*b;
 }
-const result = add(5,3);
+const result = multiply(5,3)
 console.log(result)
