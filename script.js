@@ -95,12 +95,24 @@
 //     console.log(`${key}: ${person[key]}`)
 // }
 // Practice
-const car = {
-    make: "Honda",
-    model: "City",
-    year: 2015
-};
+// const car = {
+//     make: "Honda",
+//     model: "City",
+//     year: 2015
+// };
 
-for (const key in car) {
-    console.log(`${key}: ${car[key]}`)
+// for (const key in car) {
+//     console.log(`${key}: ${car[key]}`)
+// }
+
+// COMBINING ARRAYS AND OBJECTS
+
+const books = [
+    {title: "BookA", author: "Author1"},
+    {title: "BookB", author: "Author2"},
+    {title: "BookC", author: "Author3"}
+]
+
+for (const book of books) {
+    console.log(`Title: ${book.title}, Author: ${book.author}`)
 }
