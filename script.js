@@ -248,24 +248,26 @@
 // Practice
 
 // Create a createMultiplier function that takes a number x and returns another function. The returned function should multiply its input by x.
-function createMultiplier(x) {
-    function innerMultipler(y) {
-        const result = (x*y)
-        return result
+// function createMultiplier(x) {
+//     function innerMultipler(y) {
+//         const result = (x*y)
+//         return result
         
-    }
-    return innerMultipler
-}
-const func = createMultiplier(2)
-console.log(func(5));
+//     }
+//     return innerMultipler
+// }
+// const func = createMultiplier(2)
+// console.log(func(5));
 
 // Use closures to create a createGreeter function that takes a name and returns a function that greets the name.
-function createGreeter(name) {
-    function greeting() {
-        const greet = `Hello, ${name}`
-        return greet
-    }
-    return greeting
-}
-const greetJohn = createGreeter("John");
-console.log(greetJohn());
+// function createGreeter(name) {
+//     function greeting() {
+//         const greet = `Hello, ${name}`
+//         return greet
+//     }
+//     return greeting
+// }
+// const greetJohn = createGreeter("John");
+// console.log(greetJohn());
+
+// ASYNC 
