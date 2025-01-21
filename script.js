@@ -63,12 +63,22 @@
 // console.log(book)
 
 // LOOPS WITH ARRAYS
-const fruits = ['apple','banana','cherry']
+// const fruits = ['apple','banana','cherry']
 
-for (let i = 0; i < fruits.length; i++) {  // For Loop
-    console.log(fruits[i])
+// for (let i = 0; i < fruits.length; i++) {  // For Loop
+//     console.log(fruits[i])
+// }
+
+// for (const fruit of fruits) { // For ... of Loop
+//     console.log(fruit);
+// }
+// Practice
+const movies = ['dhoom1','dhoom2','dhoom3']
+
+for (let i = 0; i < movies.length; i++) {
+    console.log(movies[i])
 }
 
-for (const fruit of fruits) { // For ... of Loop
-    console.log(fruit);
+for (const movie of movies) {
+    console.log(movie);
 }
