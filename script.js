@@ -158,8 +158,22 @@
 //     console.log(add(2,4))
 
 // Practice
-const multiply = (a,b) => a*b;
-console.log(multiply(4,5))
+// const multiply = (a,b) => a*b;
+// console.log(multiply(4,5))
 
-const square = (a) => a**2;
-console.log(square(4))
+// const square = (a) => a**2;
+// console.log(square(4))
+
+// FUNCTIONS WITH ARRAY
+
+// Find Even Numbers
+
+const numbers = [1,2,3,4,5,6,7];
+
+const isEven = (num) => num % 2 === 0;
+
+for (const num of numbers) {
+    if (isEven(num)) {
+        console.log(`${num} is even`);
+    }
+}
