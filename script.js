@@ -232,15 +232,40 @@
 // CLOSURES
 // A closure is when a function "remembers" variables from its outer scope, even after the outer function has finished executing.
 
-function outerFunction() {
-    let OuterVar = "I am from the outer scope";
+// function outerFunction() {
+//     let OuterVar = "I am from the outer scope";
 
-    function innerFunction() {
-        console.log(OuterVar); // accessible due to closure
+//     function innerFunction() {
+//         console.log(OuterVar); // accessible due to closure
+//     }
+
+//     return innerFunction
+// }
+
+// const myClosure = outerFunction();
+// myClosure();
+
+// Practice
+
+// Create a createMultiplier function that takes a number x and returns another function. The returned function should multiply its input by x.
+function createMultiplier(x) {
+    function innerMultipler(y) {
+        const result = (x*y)
+        return result
+        
     }
-
-    return innerFunction
+    return innerMultipler
 }
+const func = createMultiplier(2)
+console.log(func(5));
 
-const myClosure = outerFunction();
-myClosure();
+// Use closures to create a createGreeter function that takes a name and returns a function that greets the name.
+function createGreeter(name) {
+    function greeting() {
+        const greet = `Hello, ${name}`
+        return greet
+    }
+    return greeting
+}
+const greetJohn = createGreeter("John");
+console.log(greetJohn());
