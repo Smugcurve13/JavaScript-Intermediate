@@ -73,12 +73,24 @@
 //     console.log(fruit);
 // }
 // Practice
-const movies = ['dhoom1','dhoom2','dhoom3']
+// const movies = ['dhoom1','dhoom2','dhoom3']
 
-for (let i = 0; i < movies.length; i++) {
-    console.log(movies[i])
-}
+// for (let i = 0; i < movies.length; i++) {
+//     console.log(movies[i])
+// }
 
-for (const movie of movies) {
-    console.log(movie);
+// for (const movie of movies) {
+//     console.log(movie);
+// }
+
+// OBJECTS WITH LOOPS
+
+const person = {
+    name: "John",
+    age: 30,
+    country: "USA"
+};
+
+for (const key in person) {
+    console.log(`${key}: ${person[key]}`)
 }
