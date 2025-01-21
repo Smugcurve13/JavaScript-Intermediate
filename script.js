@@ -149,10 +149,17 @@
 
 // ARROW FUNCTIONS
 
-const greet = (name) => {
-    console.log(`Hello, ${name}`);
-}
-greet('bob');
+// const greet = (name) => {
+//     console.log(`Hello, ${name}`);
+// }
+// greet('bob');
 
-const add = (a, b) => a+b
-    console.log(add(2,4))
+// const add = (a, b) => a+b
+//     console.log(add(2,4))
+
+// Practice
+const multiply = (a,b) => a*b;
+console.log(multiply(4,5))
+
+const square = (a) => a**2;
+console.log(square(4))
