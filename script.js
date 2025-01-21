@@ -192,29 +192,39 @@
 // JS SCOPE
 // Global Scope
 
-let globalVar = "I am global";
+// let globalVar = "I am global";
 
-function showGlobal() {
-    console.log(globalVar) // accessible
-}
+// function showGlobal() {
+//     console.log(globalVar) // accessible
+// }
 
-showGlobal();
-console.log(globalVar); //accessible
+// showGlobal();
+// console.log(globalVar); //accessible
 
-// Function Scope
+// // Function Scope
 
-function myFunction() {
-    let localVar = "I am local";
-    console.log(localVar); // accessible
-}
+// function myFunction() {
+//     let localVar = "I am local";
+//     console.log(localVar); // accessible
+// }
 
-myFunction();
+// myFunction();
 // console.log(localVar) // not accessible
 
-// Block Scope
+// // Block Scope
 
-{
-    let blockVar = "I exist only here"
-    console.log(blockVar); // accessible
-}
+// {
+//     let blockVar = "I exist only here"
+//     console.log(blockVar); // accessible
+// }
 // console.log(blockVar) // not accessble
+
+// Practice
+let counter = 0
+function incrementCounter(a) {
+    counter += a
+    console.log(counter);
+    const message = ("testmessage")
+    console.log(message)
+}
+incrementCounter(5)
