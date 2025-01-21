@@ -118,11 +118,24 @@
 // }
 
 // PRACTICE
-const langs = [
-    {name: "Python", difficulty: "Easy"},
-    {name: "JS", difficulty: "dk"},
-    {name: "C#", difficulty: "def dk"}
-]
-for (const lang of langs) {
-    console.log(`Name: ${lang.name}, Difficulty: ${lang.difficulty}`)
+// const langs = [
+//     {name: "Python", difficulty: "Easy"},
+//     {name: "JS", difficulty: "dk"},
+//     {name: "C#", difficulty: "def dk"}
+// ]
+// for (const lang of langs) {
+//     console.log(`Name: ${lang.name}, Difficulty: ${lang.difficulty}`)
+// }
+
+// FUNCTIONS
+function greet(name) { // basic function defination
+    console.log(`Hello ${name}`);
 }
+greet("Alice");
+
+// Returning Values
+function add(a, b) {
+    return a + b;
+}
+const result = add(5,3);
+console.log(result)
