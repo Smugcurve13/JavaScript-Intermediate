@@ -17,6 +17,7 @@
 // // Lenghth of an Array
 // console.log(fruits.length); // Number of Elements
 
+// PRACTICE
 // const languages = ['python','js','c++']
 // console.log(languages[0])
 // console.log(languages[2])
@@ -26,21 +27,37 @@
 // console.log(languages)
 
 // OBJECT CREATION
-const person = {
-    name: "John",
-    age: 25,
-    isStudent: true
-};
-console.log(person)
+// const person = {
+//     name: "John",
+//     age: 25,
+//     isStudent: true
+// };
+// console.log(person)
 
-// Accessing Properties
-console.log(person.name);
-console.log(person["age"]);
+// // Accessing Properties
+// console.log(person.name);
+// console.log(person["age"]);
 
-// Updating Properties
-person.age = 26;
-console.log(person.age);
+// // Updating Properties
+// person.age = 26;
+// console.log(person.age);
 
-// Adding New Properties
-person.country = "India"
-console.log(person);
+// // Adding New Properties
+// person.country = "India"
+// console.log(person);
+
+// PRACTICE
+// const book = {
+//     title: "YoMAMA",
+//     author: "your mom",
+//     yearPublished: 1900
+// };
+
+// console.log(book.title)
+// console.log(book.author)
+
+// book.yearPublished = 1899
+
+// book.genre = "KoMeDy"
+
+// console.log(book)
