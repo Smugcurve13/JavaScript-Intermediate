@@ -168,12 +168,23 @@
 
 // Find Even Numbers
 
-const numbers = [1,2,3,4,5,6,7];
+// const numbers = [1,2,3,4,5,6,7];
 
-const isEven = (num) => num % 2 === 0;
+// const isEven = (num) => num % 2 === 0;
 
+// for (const num of numbers) {
+//     if (isEven(num)) {
+//         console.log(`${num} is even`);
+//     }
+// }
+
+// Practice
+// Find Odd Numbers
+const numbers = [10,15,20,25,30]
+
+const filterOddNumbers = (num) => num % 2 === 1;
 for (const num of numbers) {
-    if (isEven(num)) {
-        console.log(`${num} is even`);
+    if (filterOddNumbers(num)) {
+        console.log(`${num} is odd`)
     }
 }
