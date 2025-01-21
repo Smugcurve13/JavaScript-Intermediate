@@ -141,8 +141,18 @@
 // console.log(result)
 
 // Practice
-function multiply(a,b) {
-    return a*b;
+// function multiply(a,b) {
+//     return a*b;
+// }
+// const result = multiply(5,3)
+// console.log(result)
+
+// ARROW FUNCTIONS
+
+const greet = (name) => {
+    console.log(`Hello, ${name}`);
 }
-const result = multiply(5,3)
-console.log(result)
+greet('bob');
+
+const add = (a, b) => a+b
+    console.log(add(2,4))
