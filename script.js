@@ -315,3 +315,25 @@
 //     .then((message) => console.log(message))
 //     .catch((error) => console.log(error))
 
+// Practice
+function delayedMessage() {
+    setTimeout(() => {
+        console.log("Hello after 3 seconds")
+    }, 3000);
+}
+delayedMessage()
+
+function checkNumber(num) {
+    const numChecker = new Promise((resolve, reject) => {
+        if (num % 2 === 0) {
+            resolve(`${num} is an even number`)
+        } else {
+            reject(`${num} is an odd number`)
+        }
+    })
+    return numChecker
+}
+
+checkNumber(3)
+    .then((message) => console.log(message))
+    .catch((error) => console.error(error))
