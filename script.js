@@ -271,6 +271,7 @@
 // console.log(greetJohn());
 
 // ASYNCHRONOUS JAVASCRIPT
+
 // setTimeout and setInterval
 // console.log("Start")
 
@@ -285,7 +286,6 @@
 // console.log("End")
 
 // Promises
-
 // const myPromise = new Promise((resolve, reject) => {
 //     let success = true;
 
@@ -316,24 +316,38 @@
 //     .catch((error) => console.log(error))
 
 // Practice
-function delayedMessage() {
-    setTimeout(() => {
-        console.log("Hello after 3 seconds")
-    }, 3000);
-}
-delayedMessage()
+// function delayedMessage() {
+//     setTimeout(() => {
+//         console.log("Hello after 3 seconds")
+//     }, 3000);
+// }
+// delayedMessage()
 
-function checkNumber(num) {
-    const numChecker = new Promise((resolve, reject) => {
-        if (num % 2 === 0) {
-            resolve(`${num} is an even number`)
-        } else {
-            reject(`${num} is an odd number`)
-        }
-    })
-    return numChecker
-}
+// function checkNumber(num) {
+//     const numChecker = new Promise((resolve, reject) => {
+//         if (num % 2 === 0) {
+//             resolve(`${num} is an even number`)
+//         } else {
+//             reject(`${num} is an odd number`)
+//         }
+//     })
+//     return numChecker
+// }
 
-checkNumber(3)
-    .then((message) => console.log(message))
-    .catch((error) => console.error(error))
+// checkNumber(3)
+//     .then((message) => console.log(message))
+//     .catch((error) => console.error(error))
+
+// ASYNC/AWAIT
+const fetchData = async () => {
+    try {
+        const response = await new Promise((resolve) => 
+            setTimeout(() => resolve("Data Fetched"), 2000)
+        );
+        console.log(response);
+    } catch (error) {
+        console.error("Error:",error)
+    }
+};
+
+fetchData()
