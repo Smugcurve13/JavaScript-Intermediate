@@ -270,4 +270,48 @@
 // const greetJohn = createGreeter("John");
 // console.log(greetJohn());
 
-// ASYNC 
+// ASYNCHRONOUS JAVASCRIPT
+// setTimeout and setInterval
+// console.log("Start")
+
+// setTimeout(() => {   // run block of code after delay
+//     console.log("This Runs after 2 seconds")
+// }, 2000);
+
+// setInterval(() => {
+//     console.log("This runs every second") // run block of code at intervals
+// }, 1000);
+
+// console.log("End")
+
+// Promises
+
+// const myPromise = new Promise((resolve, reject) => {
+//     let success = true;
+
+//     if (success) {
+//         resolve("Promise resolved successfully!")
+//     } else {
+//         reject("Promise failed")
+//     }
+// });
+
+// myPromise
+//     .then((message) => console.log(message))
+//     .catch((error) => console.error(error))
+
+// Pizza Delivery Example
+// const orderPizza = new Promise((resolve, reject) => {
+//     let isRestaurantOpen = false;
+
+//     if (isRestaurantOpen) {
+//         resolve("Pizza is delivered");
+//     } else {
+//         reject("Restaurant is closed")
+//     }
+// });
+
+// orderPizza
+//     .then((message) => console.log(message))
+//     .catch((error) => console.log(error))
+
