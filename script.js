@@ -339,15 +339,29 @@
 //     .catch((error) => console.error(error))
 
 // ASYNC/AWAIT
-const fetchData = async () => {
-    try {
-        const response = await new Promise((resolve) => 
-            setTimeout(() => resolve("Data Fetched"), 2000)
-        );
-        console.log(response);
+// const fetchData = async () => {
+//     try {
+//         const response = await new Promise((resolve) => 
+//             setTimeout(() => resolve("Data Fetched"), 2000)
+//         );
+//         console.log(response);
+//     } catch (error) {
+//         console.error("Error:",error)
+//     }
+// };
+
+// fetchData()
+
+// Practice
+const delayedMessage = async() => {
+    try{
+        const response = await new Promise ((resolve) => 
+        setTimeout(() => resolve("Welcome to async"), 2000)
+    );
+    console.log(response);
     } catch (error) {
         console.error("Error:",error)
     }
 };
 
-fetchData()
+delayedMessage()
